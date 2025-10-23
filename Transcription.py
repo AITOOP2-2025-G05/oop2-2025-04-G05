@@ -10,7 +10,7 @@ def Transcription():
 
     result = mlx_whisper.transcribe(
         audio_file_path,
-        path_or_hf_repo="mlx-community/whisper-base-mlx"  # ←これが正
+        path_or_hf_repo="mlx-community/whisper-base-mlx"
     )
 
     text = result["text"].strip()
