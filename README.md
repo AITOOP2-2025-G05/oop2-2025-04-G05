@@ -6,11 +6,22 @@
 ### 実行するのに必要なモジュール
 
 ```
-
+ffmpeg-python
+pudub
+mlx>=0.11
+numba
+numpy
+torch
+tqdm
+more-itertools
+tiktoken
+huggingface_hub
+scipy
+mlx-whisper
 ```
 
 ### 実行手順
-
+main.pyを作成し、関数を呼び出す。(未実装)
 ```
 python main.py
 ```
