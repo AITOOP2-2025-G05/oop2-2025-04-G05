@@ -11,7 +11,7 @@ result = mlx_whisper.transcribe(
     audio_file_path,
     path_or_hf_repo="mlx-community/whisper-base-mlx"  # ←これが正
 )
-# print(result)
 
 text = result["text"].strip()
+
 print(text)
