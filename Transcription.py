@@ -5,13 +5,15 @@ from pydub import AudioSegment
 import numpy as np
 
 # 音声ファイルを指定して文字起こし
-audio_file_path = "python-audio-output.wav"
+def Transcription():
+    audio_file_path = "python-audio-output.wav"
 
-result = mlx_whisper.transcribe(
-    audio_file_path,
-    path_or_hf_repo="mlx-community/whisper-base-mlx"  # ←これが正
-)
+    result = mlx_whisper.transcribe(
+        audio_file_path,
+        path_or_hf_repo="mlx-community/whisper-base-mlx"  # ←これが正
+    )
 
-text = result["text"].strip()
-
-print(text)
+    text = result["text"].strip()
+    print(text)
+    
+    return text
